@@ -85,13 +85,13 @@ go run 01-basic-mcp/server.go -transport http -addr :8080
 go run 02-basic-token-passthrough/server.go -transport http
 
 # OAuth MCP server with memory store (default)
-go run 03-oauth-mcp/oauth-server/server.go -client_id=<id> -client_secret=<secret> -addr :8095
+go run 03-oauth-mcp/dcr/oauth-server/server.go -client_id=<id> -client_secret=<secret> -addr :8095
 
 # OAuth MCP server with Redis store
-go run 03-oauth-mcp/oauth-server/server.go -client_id=<id> -client_secret=<secret> -addr :8095 -store redis -redis-addr localhost:6379
+go run 03-oauth-mcp/dcr/oauth-server/server.go -client_id=<id> -client_secret=<secret> -addr :8095 -store redis -redis-addr localhost:6379
 
 # OAuth client example
-go run 03-oauth-mcp/oauth-client/client.go
+go run 03-oauth-mcp/dcr/oauth-client/client.go
 
 # Observability server
 go run 04-observability/server.go -transport http

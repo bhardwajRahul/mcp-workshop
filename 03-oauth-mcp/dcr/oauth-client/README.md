@@ -172,7 +172,7 @@ flowchart TD
 1. **Start the OAuth MCP Server** (required first):
 
    ```bash
-   cd 03-oauth-mcp/server
+   cd 03-oauth-mcp/dcr/oauth-server
    go run server.go -client_id="your-github-client-id" -client_secret="your-github-client-secret"
    ```
 
@@ -186,7 +186,7 @@ flowchart TD
 1. Change to the client directory:
 
    ```bash
-   cd 03-oauth-mcp/client
+   cd 03-oauth-mcp/dcr/oauth-client
    ```
 
 2. (Optional) Set environment variables for pre-configured client credentials:
